@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <div class="positioner">
-        <div class="logo">
+        <div class="main-header-logo">
           <img src="img/index-logo.pgn" alt="Магазин мороженного «Глейси»">
         </div>
         <nav class="main-nav">
@@ -24,9 +24,9 @@
           </ul>
         </nav>
         <div class="user-block">
-          <!-- тут должен быть поиск, я пока незнаю как его сделать правильно-->
-          <a href="#" class="login">Вход</a>
-          <a href="#" class="cart">Корзина</a>
+          <a class="search" href="#">Поиск</a>
+          <a class="login" href="#">Вход</a>
+          <a class="cart" href="#">Корзина</a>
         </div>
       </div>
     </header>
@@ -38,32 +38,55 @@
         </div>
         <div class="promo-slider">
           <img src="img/promo-img1.pgn" alt="Мороженное-рожок">
+          <a class="button promo-button" href="#">Давайте оба!</a>
         </div>
-        <div class="promo-container jam">
+        <div class="promo-container promo-jam">
           <b>Малинка даром!</b>
           <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button" href="#">Хочу варенье!</a>
         </div>
-        <div class="promo-container chocolate">
+        <div class="promo-container promo-chocolate">
           <b>Шоколадки даром!</b>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="button" href="#">Хочу шоколадки!</a>
         </div>
-        <div class="promo-item orange">
+        <div class="promo-item promo-orange">
+          <img src="img/hit.pgn" alt="Хит">
+          <img src="img/orange-icecream.pgn">
+          <div class="item-price">
+            310&#8381;/кг
+          </div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
-        <div class="promo-item coffee">
+        <div class="promo-item promo-coffee">
+          <img src="img/hit.pgn" alt="Хит">
+          <img src="img/coffee-icecream.pgn">
+          <div class="item-price">
+            380&#8381;/кг
+          </div>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </div>
-        <div class="promo-item strawberry">
+        <div class="promo-item promo-strawberry">
+          <img src="img/hit.pgn" alt="Хит">
+          <img src="img/strawberry-icecream.pgn">
+          <div class="item-price">
+            355&#8381;/кг
+          </div>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
-        <div class="promo-item cream">
+        <div class="promo-item promo-cream">
+          <img src="img/hit.pgn" alt="Хит">
+          <img src="img/cream-icecream.pgn">
+          <div class="item-price">
+            415&#8381;/кг
+          </div>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </div>
     </div>
     <main>
       <div class="positioner">
-        <section class="about-us">
+        <section class="main-about-us">
           <h2>Магазин Глейси - это онлайн и оффлайн магазин по продаже мороженного собственного производства на развес</h2>
           <p>Все наше мороженное изготавлиевает на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           <p>Для приготовления используются настоящие сливки и молоко высочайщего качества.
@@ -75,13 +98,53 @@
           <span class="blog-txt">
             Новое в нашем блоге
           </span>
-          <a href="#" class="blog-link">
+          <br>
+          <a class="blog-link" href="#" >
             10 способов<br>
             сервировки фруктовых шербетов<br>
             к столу
           </a>
         </article>
+        <div class="delivery">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+             Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+          <form action="#" method="post">
+            <input type="text" name="email" value="Электронная почта">
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
       </div>
     </main>
+    <div class="map">
+      <img src="img/index-map.pgn" alt="Карта">
+      <div class="map-contacts">
+                <p>Адрес главного офиса и офлайн магазина:<br>
+          <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
+              </p>Для заказов по телефону:<br>
+                  <b>8 812 450-25-25</b><br>
+                  (с 10 до 20 ежедневно)</p>
+        <a class="button" href="#">Форма обратной связи</a>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <section class="footer-social">
+        <a class="social-btn social-btn-twit" href="#">Твиттер</a>
+        <a class="social-btn social-btn-inst" href="#">Истаграм</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      </section>
+      <section class="footer-about-us">
+        <ul>
+          <li><a class="footer-about-us-supliers" href="#">Для поставщиков</a></li>
+          <li><a href="">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </section>
+      <section class="footer-copyright">
+        <img src="img/index-copyright-logo.pgn" alt="htmlacademy logo">
+        Сделано в <a href="#">HTML academy</a>&copy; 2016
+      </section>
+    </footer>
   </body>
 </html>
