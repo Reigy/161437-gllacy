@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>GllacyShop:Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="positioner">
+      <div class="container">
         <div class="main-header-logo">
         <a href="index.html"><img src="img/index-logo.pgn" alt="Магазин мороженного «Глейси»"></a>
         </div>
@@ -28,14 +30,15 @@
           <a class="login" href="#">Вход</a>
           <a class="cart" href="#">Корзина</a>
         </div>
-      </div>
-    </header>
-    <div class="icecream-choice">
-      <div class="positioner">
         <div class="about-work">
           С 10 до 20, ежедневно<br>
           <b class="phone">8 812 450-25-25</b>
         </div>
+      </div>
+    </header>
+    <div class="icecream-choice">
+      <div class="container">
+
         <div class="breadcrumbs">
           <ul class="crumbs">
             <li>
@@ -54,12 +57,14 @@
           <form action="#" method="get">
             <div class="assortment-sorting">
               Сортировка:
-              <select name="sorting">
-                <option value="popular" selected>По популярности</option>
-                <option value="lowest first">Сначала недорогие</option>
-                <option value="highest first">Сначала дорогие</option>
-                <option value="fat contern">По жирности</option>
-              </select>
+              <div class="assortment-item assortment-item-sorting">
+                <select name="sorting">
+                  <option value="popular" selected>По популярности</option>
+                  <option value="lowest first">Сначала недорогие</option>
+                  <option value="highest first">Сначала дорогие</option>
+                  <option value="fat contern">По жирности</option>
+                </select>
+              </div>
             </div>
             <div class="assortment-cost">
               Цена
@@ -67,59 +72,63 @@
               руб.-
               <input type="text" id="max-cost" value="500">
               руб.
-            </div>
-            <div class="assortment-cost-slider">
+              <div class="assortment-item assortment-cost-slider">
               <!--тут будет слайдер для диапазона цены-->
+              </div>
             </div>
             <div class="assortment-fat">
               Жирность:
-              <label>
-                <input type="radio" name="fat" value="0%">
-                0%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="0%-10%" checked>
-                до 10%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="0%-30%">
-                до 30%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="30%-100%">
-                  выше 30%
-              </label>
+              <div class="assortment-item assortment-item-fat">
+                <label>
+                  <input type="radio" name="fat" value="0%">
+                  0%
+                </label>
+                <label>
+                  <input type="radio" name="fat" value="0%-10%" checked>
+                  до 10%
+                </label>
+                <label>
+                  <input type="radio" name="fat" value="0%-30%">
+                  до 30%
+                </label>
+                <label>
+                  <input type="radio" name="fat" value="30%-100%">
+                    выше 30%
+                </label>
+              </div>
             </div>
             <div class="assortment-fillers">
               Наполнители:
-              <label>
-                <input type="checkbox" name="chocolate" checked>
-                шоколадные
-              </label>
-              <label>
-                <input type="checkbox" name="sugar" checked>
-                Сахарные присыпки
-              </label>
-              <label>
-                <input type="checkbox" name="fruit">
-                Фрукты
-              </label>
-              <label>
-                <input type="checkbox" name="syrops">
-                Сиропы
-              </label>
-              <label>
-                <input type="checkbox" name="jams">
-                Джемы
-              </label>
+              <div class="assortment-item assortment-item-fillers">
+                <label>
+                  <input type="checkbox" name="chocolate" checked>
+                  шоколадные
+                </label>
+                <label>
+                  <input type="checkbox" name="sugar" checked>
+                  Сахарные присыпки
+                </label>
+                <label>
+                  <input type="checkbox" name="fruit">
+                  Фрукты
+                </label>
+                <label>
+                  <input type="checkbox" name="syrops">
+                  Сиропы
+                </label>
+                <label>
+                  <input type="checkbox" name="jams">
+                  Джемы
+                </label>
+              </div>
             </div>
             <input type="submit" value="Применить">
           </form>
         </div>
       </div>
     </div>
-    <div class="catalog">
-      <div class="positioner">
+    <section class="catalog">
+      <div class="container">
         <div class="catalog-space">
           <div class="catalog-item orange-icecream">
             <img src="img/orange-icecream.pgn">
@@ -228,25 +237,27 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="main-footer">
-      <section class="footer-social">
-        <a class="social-btn social-btn-twit" href="#">Твиттер</a>
-        <a class="social-btn social-btn-inst" href="#">Истаграм</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      </section>
-      <section class="footer-about-us">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-btn social-btn-twit" href="#">Твиттер</a></li>
+          <li><a class="social-btn social-btn-inst" href="#">Истаграм</a></li>
+          <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+      <div class="footer-about-us">
         <ul>
           <li><a class="footer-about-us-supliers" href="#">Для поставщиков</a></li>
           <li><a href="">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
-      </section>
-      <section class="footer-copyright">
+      </div>
+      <div class="footer-copyright">
         <img src="img/index-copyright-logo.pgn" alt="htmlacademy logo">
         Сделано в <a href="#">HTML academy</a>&copy; 2016
-      </section>
+      </div>
     </footer>
   </body>

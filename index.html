@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="positioner">
+      <div class="container">
         <div class="main-header-logo">
           <img src="img/index-logo.pgn" alt="Магазин мороженного «Глейси»">
         </div>
@@ -28,30 +30,32 @@
           <a class="login" href="#">Вход</a>
           <a class="cart" href="#">Корзина</a>
         </div>
-      </div>
-    </header>
-    <div class="promo">
-      <div class="positioner">
         <div class="about-work">
           С 10 до 20, ежедневно<br>
           <b class="phone">8 812 450-25-25</b>
         </div>
+      </div>
+    </header>
+    <div class="promo">
+      <div class="container">
         <div class="promo-slider">
           <img src="img/promo-img1.pgn" alt="Мороженное-рожок">
           <a class="button promo-button" href="#">Давайте оба!</a>
         </div>
         <div class="promo-container promo-jam">
-          <b>Малинка даром!</b>
+          <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button" href="#">Хочу варенье!</a>
         </div>
         <div class="promo-container promo-chocolate">
-          <b>Шоколадки даром!</b>
+          <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="button" href="#">Хочу шоколадки!</a>
         </div>
         <div class="promo-item promo-orange">
-          <img src="img/hit.pgn" alt="Хит">
+          <div class="promo-hit">
+            <img src="img/hit.pgn" alt="Хит">
+          </div>
           <img src="img/orange-icecream.pgn">
           <div class="item-price">
             310&#8381;/кг
@@ -59,7 +63,9 @@
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
         <div class="promo-item promo-coffee">
-          <img src="img/hit.pgn" alt="Хит">
+          <div class="promo-hit">
+            <img src="img/hit.pgn" alt="Хит">
+          </div>
           <img src="img/coffee-icecream.pgn">
           <div class="item-price">
             380&#8381;/кг
@@ -67,7 +73,9 @@
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </div>
         <div class="promo-item promo-strawberry">
-          <img src="img/hit.pgn" alt="Хит">
+          <div class="promo-hit">
+            <img src="img/hit.pgn" alt="Хит">
+          </div>
           <img src="img/strawberry-icecream.pgn">
           <div class="item-price">
             355&#8381;/кг
@@ -75,7 +83,9 @@
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
         <div class="promo-item promo-cream">
-          <img src="img/hit.pgn" alt="Хит">
+          <div class="promo-hit">
+            <img src="img/hit.pgn" alt="Хит">
+          </div>
           <img src="img/cream-icecream.pgn">
           <div class="item-price">
             415&#8381;/кг
@@ -84,8 +94,8 @@
         </div>
       </div>
     </div>
-    <main>
-      <div class="positioner">
+    <section class="main">
+      <div class="container">
         <section class="main-about-us">
           <h2>Магазин Глейси - это онлайн и оффлайн магазин по продаже мороженного собственного производства на развес</h2>
           <p>Все наше мороженное изготавлиевает на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -114,7 +124,7 @@
           </form>
         </div>
       </div>
-    </main>
+    </section>
     <div class="map">
       <img src="img/index-map.pgn" alt="Карта">
       <div class="map-contacts">
@@ -127,24 +137,26 @@
       </div>
     </div>
     <footer class="main-footer">
-      <section class="footer-social">
-        <a class="social-btn social-btn-twit" href="#">Твиттер</a>
-        <a class="social-btn social-btn-inst" href="#">Истаграм</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      </section>
-      <section class="footer-about-us">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-btn social-btn-twit" href="#">Твиттер</a></li>
+          <li><a class="social-btn social-btn-inst" href="#">Истаграм</a></li>
+          <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+      <div class="footer-about-us">
         <ul>
           <li><a class="footer-about-us-supliers" href="#">Для поставщиков</a></li>
           <li><a href="">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
-      </section>
-      <section class="footer-copyright">
+      </div>
+      <div class="footer-copyright">
         <img src="img/index-copyright-logo.pgn" alt="htmlacademy logo">
         Сделано в <a href="#">HTML academy</a>&copy; 2016
-      </section>
+      </div>
     </footer>
   </body>
 </html>
