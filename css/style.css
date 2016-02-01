@@ -4,6 +4,7 @@ body {
   color: black;
   font-weight: normal;
   font-family: Roboto, sans-serif;
+  background-color: #849d8f; /*добавил потому что лого не видно*/
 }
 h2 {
   font-size: 35px;
